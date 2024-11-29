@@ -8,7 +8,78 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura-dark.css" type="text/css">
 </head>
 <body>
-    <h1>Hitbox Documentation</h1>
-    <span>Repo link: <a href="https://github.com/kynlux/HitboxModule"></a></span>
+    <h1>HitboxModule Documentation</h1>
+    <h2>Documentation Navigation</h2>
+    <ul>
+        <li><a href="#prelude">Prelude</a></li>
+        <li><a href="#hitbox">Hitbox</a></li>
+        <ul>
+            <li><a href="#new">Hitbox.new()</a></li>
+            <li><a href="#gethits">Hitbox:GetHits()</a></li>
+            <li><a href="#updatetargets">Hitbox:UpdateTargets()</a></li>
+            <li><a href="#smoothmove">Hitbox:SmoothMove()</a></li>
+            <li><a href="#clean">Hitbox:Clean()</a></li>
+        </ul>
+        <li><a href="#links">Links</a></li>
+    </ul>
+
+    <h2 id="prelude">Prelude</h2>
+    <p class="subtext">I used translator because im to lazy to write on english by myself</p>
+    <p>HitboxModule was made because most of the frameworks for hitboxes that I've seen are terrible and have a lot of unnecessary stuff in them</p>
+    <p>I plan to update the repository as long as ideas for it keep coming in</p>
+
+    <h2 id="hitbox">Hitbox</h2>
+    <p>Hitbox main class that will be used for your hitboxes and their manipulations</p>
+
+    <h3 id="new">Hitbox.new()</h3>
+    <p>Hitbox.new() accepts parameters</p>
+    <ul>
+        <li>cframe (CFrame) - CFrame of Hitbox</li>
+        <li>size (Vector3) - Hitbox Size</li>
+        <li>overlap (OverlapParams) (not neccesary) - OverlapParams for Hitbox</li>
+        <li>owner (Instance) (not neccesary) - Owner of Hitbox (the owner of the hitbox can't be detected by hitbox)</li>
+        <li>visual (boolean) (not neccesary) - Show visual of hitbox</li>
+    </ul>
+    <p>Hitbox.new() is used to initialize a hitbox</p>
+
+    <h3 id="gethits">Hitbox:GetHits()</h3>
+    <p>Hitbox:GetHits() accepts parameters</p>
+    <ul>
+        <li>sorted (boolean) (not neccesary) - Make returning table much useful and clear</li>
+        <li>clean (boolean) (not neccesary) - Clean self.Hits after getting executing method</li>
+    </ul>
+    <p>Hitbox:GetHits() is used to get self.Hits</p>
+
+    <h3 id="updatetargets">Hitbox:UpdateTargets()</h3>
+    <p>Hitbox:UpdateTargets() accepts parameters</p>
+    <ul>
+        <li>delayTime (number) (not neccesary) - Delay time before clearing each target after it is detected</li>
+        <li>clean (Vector3) (not neccesary) - Clean self.Hits before getting targets</li>
+    </ul>
+    <p>Hitbox:UpdateTargets() is used for a single update of self.Hits (i.e. updating the table with targets)</p>
+
+    <h3 id="smoothmove">Hitbox:SmoothMove()</h3>
+    <p>Hitbox:SmoothMove() accepts parameters</p>
+    <ul>
+        <li>cframe (CFrame) - New cframe for hitbox</li>
+        <li>moveTime (number) - Time to move hitbox</li>
+        <li>targets (boolean) (not neccesary) - Update targets or not</li>
+        <li>delayTime (number) (not neccesary) - Delay time before clearing each target after it is detected</li>
+        <li>clean (Vector3) (not neccesary) - Clean self.Hits before getting targets</li>
+    </ul>
+    <p>Hitbox:SmoothMove() is used to move the hitbox around</p>
+
+    <h3 id="clean">Hitbox:Clean()</h3>
+    <p>Hitbox:Clean() accepts parameters</p>
+    <ul>
+        <li>delayTime (number) (not neccesary) - Delay before cleaning</li>
+    </ul>
+    <p>Hitbox:Clean() is used to clean self.Hits</p>
+
+    <h2 id="links">Links</h2>
+    <ul>
+        <li><a href="https://github.com/kynlux/HitboxModule">Repo link</a></li>
+        <li><a href="https://www.roblox.com/users/7511144303/profile">Follow me on Roblox</a></li>
+    </ul>
 </body>
 </html>
